@@ -1,0 +1,106 @@
+.continut{
+    background-color: #F8F9FA;
+    align-self: center;
+    align-items: center;
+    z-index: 0;
+    display: inline-block;
+}
+.continut .card{
+    display: inline-block;
+    padding: 40px;
+    margin: 10px 10px 10px 10px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 500;
+}
+.continut .card h5{
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+.continut .card .card-title{
+    font-weight: 700;
+}
+.continut .card .cos{
+    opacity: 0;
+    font-size: 8px;
+    position: absolute;
+}
+.continut .btn-special:hover .cos{
+    opacity: 1;
+    transition: 0.2s;
+    font-size: 10px;
+    position: absolute;
+    color: black;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slider{
+    max-width: 90%;
+    /* The position of the element is set relative to its original position: */
+    position: relative;
+    /* Center horizontally: */
+    margin: auto;
+    height: 70vh;
+}
+/* The picture is scaled in relation to the parent element: */
+.slider .item img {
+    /* The element is resized to fill the block and maintain proportions: */
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+    border-radius: 5px;
+}
+/* Back and forward buttons: */
+.slider .previous, .slider .next {
+    /* Adds an icon to the cursor when it is over the button: */
+    cursor: pointer;
+    /* The position of the element is set relative to the borders of the browser: */
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    /* Styling the buttons themselves: */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    /* Background fading on hover: */
+    transition: 0.6s ease;
+    /* Rounding the borders: */
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* When you hover over the buttons, add the background of the buttons: */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Slide animation: */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.continut .card .btn-primary{
+    background-color: yellowgreen;
+    border: 0;
+    font-weight: 600;
+}
+.continut .card .btn-primary:hover{
+    background-color: rgb(113, 151, 38);
+    border: 0;
+    color: rgb(234, 248, 109);
+    font-weight: 600;
+}
+@keyframes fade {
+    /* Set and change the transparency: */
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}

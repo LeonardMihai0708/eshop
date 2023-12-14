@@ -1,0 +1,118 @@
+.cos{
+    margin-left: 5vw;
+}
+.continut{
+    background-color: rgb(245, 244, 241);
+    border-radius: 6px;
+}
+.continut h4{
+    font-weight: 300;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.continut h4 .paragrafC1,.paragrafC2{
+    font-size: 24px;
+}
+.continut .paragrafC1{
+    color: #dfdf20;
+  }
+.continut .paragrafC2{
+    color: rgb(33, 148, 48);
+}
+
+
+
+.produsAles{
+    background-color: white;
+    border-radius: 5px;
+}
+.produsAles img{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 12%;
+}
+
+
+
+.produs .titlu{
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.produs .descriere{
+    font-size: 14px;
+    font-weight: 500;
+}
+.produs .pret{
+    font-size: 18px;
+
+}
+.produs .pret_produs1{
+    font-size: 18px;
+    color: #dfdf20;
+}
+.produs .pret_produs2{
+    font-size: 18px;
+    color: rgb(33, 148, 48);
+}
+
+
+.produs .StergeProd{
+    background-color: rgb(192, 2, 2);
+    border: 0;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 7px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.produs .StergeProd:hover{
+    background-color: rgb(139, 1, 1);
+    transition: 0.2s;
+}
+.produs p{
+    font-size: 12px;
+}
+
+.produs .continua{
+    font-size: 22px;
+    color: white;
+    background-color: rgb(33, 148, 48);
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: 600;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px;
+}
+.produs .continua:hover{
+    background-color: rgb(30, 124, 42);
+}
+.produs .Increase{
+    color: black;
+    font-size: 24px;
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    width: 30px;
+    height: 45px;
+}
+.produs .Descrease{
+    color: black;
+    position: relative;
+    font-size: 24px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.produs .fa-sort-up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%,-40%);
+}

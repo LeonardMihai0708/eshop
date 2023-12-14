@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px; /* Should be removed. Only for demonstration */
+    background-color:rgb(238, 238, 238);
+    font-family: 'Times New Roman', Times, serif;
+    word-break: break-word;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column a,h4{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom:10px;
+}
+.column h1{
+    font-size: 21px;
+    font-weight: 800;
+}
+.column h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+.column a:hover{
+    text-decoration: none;
+    color: rgb(6, 110, 53);
+}
+@media only screen and (max-width: 1200px) {
+    .row{
+        margin: auto;
+        width: 100%;
+    }
+    .columnscur{
+        width: 40%;
+    }
+    .columntext{
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .row{
+        margin: auto;
+        width: 70%;
+        border-radius: 5px;
+    }
+    .columnscur{
+        width: 20%;
+    }
+    .columntext{
+        width: 79%;
+        margin-left:1%;
+    }
+    .column{
+        border-radius: 5px;
+    }
+}

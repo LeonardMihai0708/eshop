@@ -1,0 +1,59 @@
+.container{
+    border-radius: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.container h1{
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.container h3{
+    font-weight: 700;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+.container input[type=text],input[type=file] {
+    float: right;
+    width: 50%;
+    font-size: 16px;
+}
+.container input[type=file]{
+    width: auto;
+    right: 0;
+}
+.container label{
+    font-size: 18px;
+    font-weight: 600;
+    user-select: none;
+}
+.container .produsForm{
+    margin-top: 50px;
+}
+.containerSTR form select,button{
+    display: inline-block;
+}
+.container .produs{
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.container button{
+    text-transform: uppercase;
+    background-color: rgb(33, 148, 48);
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+}
+.container button:hover{
+    background-color: rgb(18, 85, 27);
+    color: rgb(177, 177, 177);
+    cursor: pointer;
+    transition: 0.2s;
+}

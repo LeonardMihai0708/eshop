@@ -1,0 +1,145 @@
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Pacifico', cursive;
+}
+.navbar{
+  position: fixed;
+  position: -webkit-fixed;
+  width: 100%;
+  top: 0; /* required */
+  z-index: 1;
+}
+.navbar-nav .form-inline .btn{
+  background-color:rgb(33, 148, 48);
+  border-color: transparent;
+  color:rgb(255, 255, 255);
+  font-weight: 600;
+  margin-left: 10px;
+}
+.navbar-nav .form-inline{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.navbar-nav .form-inline .btn:hover{
+  background-color:rgb(61, 110, 67);
+  border-color: transparent;
+  font-weight: 600;
+}
+.navbar-brand a {
+  display: inline;
+}
+span{
+  font-size: 20px;
+  font-weight: 790;
+}
+span.paragraf1{
+  color: #dfdf20;
+}
+span.paragraf2{
+  margin-right: 15px;
+  color: rgb(33, 148, 48);
+}
+.navbar-collapse .navbar-nav .nav-item a.nav_link1{
+  font-weight: 750;
+  color: rgb(33, 148, 48);
+  transition: 0.2s;
+}
+.navbar-collapse .navbar-nav .nav-item a.nav_link1:hover{
+  color: rgb(61, 110, 67);
+  transition: 0.2s;
+}
+.navbar-collapse .navbar-nav .nav-item a.nav_link2{
+  font-weight: 750;
+  color: rgb(33, 148, 48);
+  transition: 0.2s;
+}
+.navbar-collapse .navbar-nav .nav-item a.nav_link2:hover{
+  font-weight: 750;
+  color: rgb(61, 110, 67);
+  transition: 0.2s;
+}
+.navbar-collapse .navbar-nav .nav-item1 a.nav_link2{
+  font-weight: 600;
+  color:rgb(33, 148, 48);
+  transition: 0.2s;
+}
+.navbar-collapse .navbar-nav .nav-item1 a.nav_link2:hover{
+  font-weight: 600;
+  color: rgb(17, 87, 27);
+  transition: 0.2s;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link{
+  font-weight: 550;
+  color: rgb(61, 110, 67);
+}
+
+
+
+
+.navbar-nav .nav-item .dropdown-menu .btn{
+  background-color:rgb(33, 148, 48);
+  border-color: transparent;
+  color:rgb(255, 255, 255);
+  font-weight: 600;
+}
+.navbar-nav .nav-item .dropdown-menu .btn:hover{
+  background-color:rgb(61, 110, 67);
+  border-color: transparent;
+  font-weight: 600;
+}
+
+
+.collapse .navbar-nav .nav-item button{
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 750;
+  color: rgb(33, 148, 48);
+  transition: 0.2s;
+}
+
+
+.collapse .navbar-nav .navbar-brand{
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 150px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar-nav .form-inline .form-control{
+    margin-left: 0;
+  }
+  .navbar-nav .form-inline .btn{
+    margin-left: 5px;
+  }
+  .navbar-nav .form-inline{
+    margin-left: 0;
+    position: relative;
+  }
+}
+
+
+.navbar .fa-shopping-cart{
+  color: rgb(33, 148, 48);
+  transition: 0.2s;
+  position: relative;
+  font-size: 16px;
+}
+.navbar .fa-shopping-cart p{
+  position: absolute;
+  right: -8px;
+  top: 7px;
+  color: #dfdf20;
+}
+.navbar .shoppingCard{
+  padding: 8px;
+  margin-right: 5px;
+}
+.navbar a:hover .fa-shopping-cart{
+  color: rgb(61, 110, 67);
+  transition: 0.2s;
+}

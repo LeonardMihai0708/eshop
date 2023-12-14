@@ -1,0 +1,13 @@
+.filtre_comenzi p,form{
+    display: inline-block;
+}
+.newsletter_conf .pagini{
+    margin: 5px;
+    border-radius: 5px;
+}
+.newsletter_conf .pagina_curenta{
+    background-color: #555555;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 5px;
+}

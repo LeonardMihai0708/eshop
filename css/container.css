@@ -1,0 +1,93 @@
+body {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.container{
+    background-color: #F8F9FA;
+    margin-top: 10px;
+    padding: 50px;
+    /*
+    text-align: center;
+    */
+}
+.container_table{
+    background-color: #ffffff;
+    margin-top: 0;
+    padding: 5px;
+    width: 100%;
+    /*
+    text-align: center;
+    */
+}
+img{
+  user-select: none;
+}
+.container p{
+    font-weight: 600;
+    font-size: 13px;
+}
+.container_table p{
+  font-weight: 600;
+  font-size: 13px;
+}
+
+
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 0;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: 400px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent, rgba(153, 153, 153, 0.4));
+  }
+
+  @media only screen and (max-width: 900px), (max-height: 500px) {
+    .swiper-slide {
+        width: 60%;
+        height: 200px;
+    }
+  }
+
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  td {
+    padding: 0;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+    width: 100%;
+  }
+
+  @keyframes start {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+  }
+  
+  /* The element to apply the animation to */
+  .image img {
+    animation-name: start;
+    animation-duration: 3s;
+  }

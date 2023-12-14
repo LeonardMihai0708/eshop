@@ -1,0 +1,96 @@
+CREATE TABLE mesaje(
+	id int(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nume_prenume varchar(256) NOT null,
+    email varchar(256) not null,
+    telefon varchar(255) not null,
+    mesaj varchar(255) not null,
+    subiect varchar(255) not null,
+    data_plasare date not null,
+    stare int(12) not null,
+);
+CREATE TABLE conturi(
+	id int(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nume_prenume varchar(256) NOT null,
+    password varchar(256) NOT null,
+    email varchar(256) not null UNIQUE,
+    telefon varchar(255) not null UNIQUE,
+    data_nasterii date not null,
+    stare boolean not null
+);
+
+INSERT INTO conturi (nume_prenume,password,email,telefon,data_nasterii,stare) VALUES ("Persoana Fizica","test2","test2","0745328564","2000-10-08",0);
+INSERT INTO conturi (nume_prenume,password,email,telefon,data_nasterii,stare) VALUES ("Persoana Fizica","test2","test2","0745328564","2000-10-08",False);
+INSERT INTO conturi (nume_prenume,password,email,telefon,data_nasterii,stare) VALUES ("Mihai Leonard","test","test","0745328564","2001-08-07",True);
+
+
+<?php 
+    $now = date('Y');
+    $nowY = $now-18;
+    $then = $nowY."-".date('m-d');
+    echo $then;
+?>
+
+
+UPDATE conturi SET stare='1' WHERE id=14;
+
+CREATE TABLE produse(
+	id int(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    titlu varchar(255) not null,
+    descriere varchar(65535) not null,
+    categorie varchar(255) not null,
+    pret int(12) not null,
+    valabilitate int(12) not null,
+    denumire_poza varchar(255) not null
+);
+CREATE TABLE recenzii(
+    id int(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_produs int(12) NOT NULL,
+    email_recenzie varchar(255) not null UNIQUE,
+    comentarii_recenzie varchar(255) not null,
+    stele_recenzie varchar(255) not null,
+);
+
+CREATE TABLE comenzi(
+    id int(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nume_prenume varchar(256) NOT null,
+    telefon varchar(255) not null,
+    email varchar(256) not null,
+    judet varchar(255) not null,
+    localitate varchar(255) not null,
+    adresa varchar(255) not null,
+    data_plasare date not null,
+    produse varchar(255) not null,
+    pret_total int(12) NOT NULL,
+    stare int(12) not null,
+);
+
+
+
+INSERT INTO produse (titlu,descriere, categorie,pret,valabilitate, denumire_poza) VALUES ("Domeniko 1.8Kg","Biscuiți Domeniko 1.8 KG", "Biscuiți", "31 Euro","1" "domeniko.jpeg");
+
+
+
+SELECT COUNT(ProductID) FROM Products;
+
+Truncate table XXX
+
+
+
+
+<?php
+
+$dbServerName = "localhost";
+$dbUserName = "id17601764_sweet";
+$dbPassword = "9l-~roO[p^TPo?Zd";
+$dbName = "id17601764_vanvanilla";
+
+$conn = mysqli_connect($dbServerName, $dbUserName, $dbPassword, $dbName);
+
+/*
+if($conn){
+    echo "da";
+}
+else {
+    echo "nu";
+}
+*/
